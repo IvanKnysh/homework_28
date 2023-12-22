@@ -84,10 +84,10 @@ const randerProduct = (arr) => {
 		document.querySelector(`.wrapper #${categoryName} .flx`).insertAdjacentHTML(
 			"beforeend",
 			`<div class="product-item">
-					<img src="./images/${categoryName}/${item.type}.svg" alt="${item.type}" />
-					<div class="info">Name: <span>${item.type}</span></div>
-					<div class="info">Price: <span>$${item.price}</span></div>
-				</div>`
+				<img src="./images/${categoryName}/${item.type}.svg" alt="${item.type}" />
+				<div class="info">Name: <span>${item.type}</span></div>
+				<div class="info">Price: <span>$${item.price}</span></div>
+			</div>`
 		);
 	});
 };
