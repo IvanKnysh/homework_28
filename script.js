@@ -69,7 +69,7 @@ cosmeticsProducts.forEach((product) =>
 	Object.setPrototypeOf(product, Cosmetics)
 );
 
-const renderProduct = (arr) => {
+const renderProducts = (arr) => {
 	const categoryName = arr[0].category;
 
 	document.querySelector(".wrapper").insertAdjacentHTML(
@@ -92,6 +92,6 @@ const renderProduct = (arr) => {
 	});
 };
 
-renderProduct(kitchenProducts);
-renderProduct(devicesProducts);
-renderProduct(cosmeticsProducts);
+renderProducts(kitchenProducts);
+renderProducts(devicesProducts);
+renderProducts(cosmeticsProducts);
