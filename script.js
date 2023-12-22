@@ -69,10 +69,6 @@ cosmeticsProducts.forEach((product) =>
 	Object.setPrototypeOf(product, Cosmetics)
 );
 
-kitchenProducts.forEach((product) => (product.category = "kitchen"));
-devicesProducts.forEach((product) => (product.category = "devices"));
-cosmeticsProducts.forEach((product) => (product.category = "cosmetics"));
-
 const randerProduct = (arr) => {
 	const categoryName = arr[0].category;
 
