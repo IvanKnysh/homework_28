@@ -81,12 +81,14 @@ const renderProducts = (arr) => {
 	);
 
 	arr.forEach((item) => {
+		const price = item.price.length ? item.price.join("-") : item.price;
+
 		document.querySelector(`.wrapper #${categoryName} .flx`).insertAdjacentHTML(
 			"beforeend",
 			`<div class="product-item">
 				<img src="./images/${categoryName}/${item.type}.svg" alt="${item.type}" />
 				<div class="info">Name: <span>${item.type}</span></div>
-				<div class="info">Price: <span>$${item.price}</span></div>
+				<div class="info">Price: <span>$${price}</span></div>
 			</div>`
 		);
 	});
